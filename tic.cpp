@@ -2,6 +2,7 @@
 #include<cstdlib>
 using namespace std;
 char A[3][3]={{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+char B[3][3]={{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 void board();
 int check();
 void splay(char);
@@ -59,6 +60,7 @@ int check()
                                return 0;}
         else
         return 1;
+
 }
 void splay(char b)
  {  char k;
@@ -116,6 +118,8 @@ void splay(char b)
         t++;
     }
     }
+    if(d==1)
+        cout<<"MATCH DRAWN!!!";
 }
 void rep(char c, char d)
 {system("cls");
