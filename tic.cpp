@@ -12,7 +12,7 @@ int main()
      char a='y';
      cout<<"\t\t\tTIC TAC TOE"<<endl;
    do
-    {
+    { swap(A,B);
     cout<<"Choose \n!.player(X) or 2.Player(O): ";
     cin>>ch;
     if(ch==1)
